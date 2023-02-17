@@ -1,0 +1,721 @@
+@charset "utf-8";
+
+header{
+  margin: 0;
+  width: 100%;
+  justify-content:space-between;
+  background-image: linear-gradient( -45deg, #fff9fc 25%,  #ffe5f2 25%,#ffe5f2 50%, #fff9fc 50%, #fff9fc 75%, #ffe5f2 75%, #ffe5f2 );
+  background-size: 30px 30px; 
+  font-size: 100%; 
+  padding: 20px;
+  position: fixed;
+  z-index: 10;
+}
+
+body {
+  margin: 0;
+  font-family: 'BioRhyme', serif,"Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;;
+  font-size: 15px;
+  color:#333;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding-top:230px;
+}
+
+@media screen and (max-width: 700px) {
+  header{
+    float: none;
+    position:unset;
+    z-index: -1;
+  }
+  section{
+    padding:0;
+  }
+}
+
+h1{
+  font-size:xx-large;
+  padding: 14px 16px;
+  text-align: center;
+  float:none;
+  color:lightcoral;
+}
+
+h2{
+  text-align: center;
+  color: lightseagreen
+}
+
+h3{
+  color: slateblue;
+  text-align: center;
+}
+
+ul{
+  padding: 0.25rem;
+  text-align: center;
+}
+
+li{
+  display: inline;
+  list-style: none;
+  padding: 5px 5px;
+
+}
+
+.img-logo {
+  margin-top: -40px;
+  float:left;
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 5rem;
+  max-width: 100%;
+  height: min-content;
+}
+
+/*navgation bar*/
+
+.topnav {
+  margin: 0;
+  width: 100%;
+  overflow:auto;
+  background-color: #f1f1f1;
+}
+
+.nav.a.img-logo input{
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: lightseagreen;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+  transition: border-color .25s;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid lightpink;
+}
+
+.topnav a:active {
+  border-bottom: 3px solid lightpink;
+}
+
+.topnav a:link {
+  text-decoration: none;
+}
+
+.topnav a:visited {
+  text-decoration: none;
+}
+
+.topnav .search-container {
+  float: right;
+  width: 400px;
+  margin-right: 30px;
+}
+
+.topnav input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 2px solid lightgrey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.topnav .search-container button {
+  float: left;
+  width: 20%;
+  padding: 12px;
+  background: lightseagreen;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top:8px;
+}
+.topnav .search-container button:hover {
+    opacity: 0.8;
+}
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+.topImg {
+  /*position: absolute;*/
+  flex: 0 0 100%;
+  max-width: 100%;
+  /*z-index: -1;*/
+}
+
+footer {
+  background: #ffe6ea; 
+  background-image: radial-gradient(#fff 20%, transparent 20%), radial-gradient(#fff 20%, transparent 20%);
+  background-size: 20px 20px;  
+  background-position: 0 0, 10px 10px;
+  padding: 20px;
+  text-align: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  color: lightslategray;
+}
+.img-footerlogo {
+  margin-top: -20px;
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 5rem;
+  max-width: 100%;
+  height: min-content;
+}
+p {
+  border-style: dashed;
+  border-color:rgba(25, 210, 201, 0.561);
+  width: auto;
+  padding: 10px;
+  margin: 50px;
+  border-radius: 25px;
+  font-size: large;
+}
+
+/*services:*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 150px auto 150px auto;
+  justify-content: space-evenly;
+  gap: 10px;
+  background-color: white;
+}
+
+.grid-container > a {
+  width:auto;
+  padding: 50px 50px;
+  border-radius: 25px;
+  background-color: rgba(25, 210, 201, 0.561);
+  text-align: center;
+  font-size: 30px;
+  color:gray;
+}
+
+#petphoto{
+  padding: 20px 20px;
+  width: auto;
+
+}
+html, body {
+  scroll-padding-top: 240px;
+}
+
+@media screen and (max-width: 700px) {
+  html, body {
+    scroll-padding-top: 80px;
+  }
+  .grid-container > a {
+    width:200px;
+    padding: 30px 30px;
+    border-radius: 25px;
+    background-color: rgba(25, 210, 201, 0.561);
+    text-align: center;
+    font-size: 20px;
+    color:gray;
+  }
+}
+
+a.btn {
+  padding:10px 20px;
+  width: 200px;
+  border-radius: 25px;
+  display:flex;
+  justify-content:center;
+  float: right;
+}
+
+a.btn--orange {
+  color: #fff;
+  background-color: lightsalmon;
+  border-bottom: 5px solid #b84c00;
+ 
+}
+a.btn--orange:hover {
+  margin-top: 3px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+}
+a.btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+@media only screen and (max-width: 600px) { 
+  .container{
+    width: 100%;
+    margin: 6px 0;
+  }
+  .grid-container>div{
+    padding:50px 0;
+    font-size: midium;
+  }
+  p{
+    font-size: medium;
+  }
+}
+
+/*bookings*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: lightseagreen;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.bookingcontainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.col-25 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+#service{
+  font-family:"Helvetica Neue";
+  color:gray;
+}
+
+#detail{
+  font-family:"Helvetica Neue";
+  color:black;
+}
+
+/* Clear floats after the columns */
+.row:after { 
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*photogallery*/
+
+div.gallery {
+  border: 1px solid gainsboro;
+  box-shadow: 10px 10px 15px -10px;
+}
+
+div.gallery:hover {
+  border: 2px solid gray;
+  box-shadow: -10px -5px 10px lightgrey inset;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.photos {
+  padding: 0 5px;
+  float: left;
+  width: 25%;
+}
+@media screen and (max-width: 600px) {
+  .photos {
+    padding: 0 5px;
+    float: left;
+    width: 50%;
+  }
+}
+/*testmonials*/
+
+.person {
+  padding: 10px;
+  border: 5px solid lightseagreen;
+  border-style: dashed;
+  border-radius: 25px;
+  margin: 10px; 
+  width: auto;
+}
+
+.comment {
+  padding: 15px;
+  text-align: left;
+}
+
+.testmonials {
+  padding: 0 6px;
+  width: 100%;
+}
+
+/*about us*/
+
+.aboutus {
+  padding: 15px;
+  border-style: none;
+  border-style: dashed;
+  border-color: lightpink;
+  color: gray;
+  border-radius: 25px;
+  box-sizing:border-box;
+}
+
+.ownerimg{
+  padding:10px;
+  display: flex;
+  float: right;
+  margin-right: 10px;
+}
+p.message{
+  padding:10px;
+  
+}
+@media screen and (max-width: 600px) {
+
+  .aboutus {
+    padding: 10px;
+    font-size: smaller;
+  }
+  
+}
+
+.aboutus {
+  display:block;
+  content:'';
+  clear:both;
+  }
+
+
+
+  /*login*/
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .logincontainer>button {
+    background-color: lightseagreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .logincontainer>button:hover {
+    opacity: 0.8;
+  }
+
+  .login>button{
+    background-color: lightseagreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 3px 3px;
+    border-radius: 25px;
+    border: none;
+    float: right;
+  }
+  .login>button:hover {
+    opacity: 0.8;
+  }
+
+  .cancelbtn {
+    background-color: #f44336;
+    width: auto;
+    padding: 10px 18px;
+  }
+ 
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 10px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 20%;
+  }
+  
+  .logincontainer {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+  /*fontawesome*/
+  .fbvideo {
+    position:relative;
+    width:100%;
+    height:0;
+    padding-top:75%;
+    }
+
+  .fbvideo iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height :100%;
+  }
+  .fa-3x{
+    display: flex;
+    justify-content: space-around;
+    color: lightsalmon;
+  }
+/*whole*/
+.hidden_box {
+  margin: 2em 0;
+  padding: 0;
+}
+
+/*logobuttom*/
+.hidden_box label {
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor :pointer;
+  transition: .5s;
+}
+
+/*icon*/
+.hidden_box label:before {
+  display: inline-block;
+  content: '\f078';
+  font-family: 'FontAwesome';
+  padding-right: 5px;
+  transition: 0.2s;
+}
+
+/*button hover*/
+.hidden_box label:hover {
+  background: #f1f1f1;
+}
+
+/*change icons/
+.hidden_box input:checked ~ label:before {
+   content: '\f00d';
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+   color: #668ad8;
+}
+
+/*no display*/
+.hidden_box input {
+  display: none;
+}
+
+/*no display*/
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/*click and see*/
+.hidden_box input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+
+/*hero image*/
+
+.hero{
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+.hero > strong{
+  position:absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 100px;
+  color: rgb(69, 150, 216);
+  font-weight: bold;
+  display:block;
+  width: 100%;
+  text-align: center;
+}
+.hero > video{
+
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) 
+{
+  .hero > strong{
+    top: 50%;
+    font-size: 60px; 
+  }
+}
+@media screen and (max-width: 350px) 
+{
+  .hero > strong{
+    top: 50%;
+    font-size: 30px; 
+  }
+}
+
+
+/*bottonsounds*/
+/*
+.sbtn {
+  box-sizing: border-box;
+  background-color: lightsalmon;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 80%;
+}
+
+*/
